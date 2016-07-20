@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+	<style type="text/css">
+	body {
+		background-color: #ff5722;
+		color: white;
+		font-family: arial, sans-serif;
+		font-weight: bold;
+		text-align: center;
+		padding: 10%;
+
+
+	}
+	input {
+		margin: 1em;
+	}
+	#cipher {
+		color: black;
+	}
+	</style>
+</head>
+<body>
+	<p>CAESAR'S CIPHER</p>
+	<form>
+		<label>Message</label><input type='text' name='word' ><br>
+		<label>Cipher factor (can be negative)</label><input type='text' name='factor' ><br>
+		<input type='submit' value='See what it says'>
+	</form>
+	<p id='cipher'><%= word%></p>
+</body>
+</html>
